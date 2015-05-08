@@ -79,13 +79,19 @@ public class VentanaPokedex extends javax.swing.JFrame {
             jLabel6.setText(p.weight);
             jLabel8.setText(p.height);
             jLabel10.setText(p.id);
-        }
+            jLabel16.setText("000"+p.idNo);
+            jLabel17.setText(p.ExpPoints);
+            jLabel18.setText(p.ExpNextLvl);
+       }
         else {
             jLabel1.setText("???");
             jLabel3.setText("???");
             jLabel6.setText("???");
             jLabel8.setText("???");
             jLabel10.setText("???");
+            jLabel16.setText("???");
+            jLabel17.setText("???");
+            jLabel18.setText("???");
         }
     }
     @Override
@@ -128,6 +134,9 @@ public class VentanaPokedex extends javax.swing.JFrame {
                 p.weight = resultadoConsulta.getString(11);
                 p.height = resultadoConsulta.getString(10);
                 p.id = resultadoConsulta.getString(1);
+                p.idNo = resultadoConsulta.getString(20);
+                p.ExpPoints = resultadoConsulta.getString(18);
+                p.ExpNextLvl = resultadoConsulta.getString(17);
                 
                 listaPokemons.put(resultadoConsulta.getString(1), p);
             }
@@ -280,7 +289,7 @@ public class VentanaPokedex extends javax.swing.JFrame {
         jLabel18.setFont(new java.awt.Font("Agency FB", 0, 28)); // NOI18N
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         getContentPane().add(jLabel18);
-        jLabel18.setBounds(360, 300, 130, 30);
+        jLabel18.setBounds(360, 330, 130, 40);
 
         jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Gill Sans MT", 0, 18)); // NOI18N

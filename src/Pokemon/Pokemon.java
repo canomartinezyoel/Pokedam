@@ -14,6 +14,6 @@ public class Pokemon {
     public String height = "";
     public String id = "";
     public String idNo = "";
-    public String ExpPoint = "";
+    public String ExpPoints = "";
     public String ExpNextLvl = "";
 }
