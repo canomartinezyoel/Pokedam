@@ -107,7 +107,6 @@ public class VentanaPokedex extends javax.swing.JFrame {
         initComponents();
         try {
             imagenPokemons = ImageIO.read(getClass().getResource("black-white.png"));
-            imagenFondo = ImageIO.read(getClass().getResource("pokedex1.png"));
         } catch (IOException ex) {
             Logger.getLogger(VentanaPokedex.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -221,13 +220,13 @@ public class VentanaPokedex extends javax.swing.JFrame {
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Specie");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(240, 106, 120, 34);
+        jLabel4.setBounds(240, 106, 120, 37);
 
         jLabel5.setFont(new java.awt.Font("Agency FB", 1, 28)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Weight");
         getContentPane().add(jLabel5);
-        jLabel5.setBounds(240, 140, 110, 34);
+        jLabel5.setBounds(240, 140, 110, 37);
 
         jLabel6.setFont(new java.awt.Font("Agency FB", 0, 28)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -238,7 +237,7 @@ public class VentanaPokedex extends javax.swing.JFrame {
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Height");
         getContentPane().add(jLabel7);
-        jLabel7.setBounds(240, 170, 90, 34);
+        jLabel7.setBounds(240, 170, 90, 37);
         jLabel7.getAccessibleContext().setAccessibleName("Height:");
 
         jLabel8.setFont(new java.awt.Font("Agency FB", 0, 28)); // NOI18N
@@ -318,9 +317,9 @@ public class VentanaPokedex extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton2);
-        jButton2.setBounds(220, 380, 290, 31);
+        jButton2.setBounds(220, 380, 290, 33);
 
-        jLabel9.setIcon(new javax.swing.ImageIcon("D:\\Yoel Cano Martínez\\Programación\\ImgPokedexFinal.png")); // NOI18N
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Pokemon/ImgPokedexFinal.png"))); // NOI18N
         getContentPane().add(jLabel9);
         jLabel9.setBounds(0, 0, 510, 380);
 
